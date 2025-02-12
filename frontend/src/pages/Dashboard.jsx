@@ -61,11 +61,16 @@ const Dashboard = () => {
       </div>
       <div className="event-grid">
         {events?.length > 0 ? (
-          events.map((event) => <EventCard key={event._id} event={event} />)
+          events.map((event) => (
+            <div className="event-card" key={event._id}>
+              <EventCard event={event} />
+            </div>
+          ))
         ) : (
           <p className="no-events">No events found</p>
         )}
       </div>
+
       <div className="back-link">
         <button onClick={() => navigate("/eventCreate")}>create Event</button>
       </div>

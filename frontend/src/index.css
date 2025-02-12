@@ -1,68 +1,171 @@
+/* Global font styles */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --primary-color: #646cff;
+  --primary-hover: #535bf2;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --background-color: #bee698;
+  --light-background: #ffffff;
+  --dark-background: #e4dfdf;
+  --button-background: #1a1a1a;
+  --button-hover-border: #646cff;
+  --font-size-base: clamp(14px, 1vw, 16px);
+
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: var(--font-size-base);
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
+  color: var(--text-color);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+}
+/* Ensure form inputs have a white background and black text */
+input,
+textarea,
+select {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
 }
 
+/* Optional: Add focus effect */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 5px rgba(100, 108, 255, 0.5);
+}
+
+/* General resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Links */
 a {
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  color: var(--primary-color);
+  text-decoration: none;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--primary-hover);
 }
 
+/* Body styles */
 body {
-  margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--background-color);
+  padding: 1rem;
 }
 
+/* Headings */
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.2;
 }
 
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+}
+
+/* Buttons */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  padding: 0.8em 1.4em;
+  font-size: 1rem;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--button-background);
+  color: white;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.3s ease-in-out;
 }
+
 button:hover {
-  border-color: #646cff;
+  border-color: var(--button-hover-border);
+  background-color: var(--primary-hover);
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Responsive Utility Classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    padding: 0.5rem;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    /* background-color: var(--light-background); */
   }
   a:hover {
     color: #747bff;
   }
   button {
     background-color: #f9f9f9;
+    color: black;
   }
 }
