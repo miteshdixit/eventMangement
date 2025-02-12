@@ -7,3 +7,10 @@
 2025-02-12 15:55:02 [[31MERROR[39M]: Event creation failed: Cannot read properties of undefined (reading 'id')
 2025-02-12 16:14:07 [[31MERROR[39M]: Event creation failed: Event validation failed: date: Event date must be in the future
 2025-02-12 16:14:21 [[31MERROR[39M]: Event creation failed: Event validation failed: date: Event date must be in the future
+2025-02-12 16:28:56 [[33MWARN[39M]: Login attempt for non-existent user: mitesdixit741@gmail.com
+2025-02-12 16:29:14 [[33MWARN[39M]: Login attempt for non-existent user: mitesdixit741@gmail.com
+2025-02-12 18:39:20 [[31MERROR[39M]: Get events failed: getaddrinfo ENOTFOUND cluster0-shard-00-00.337or.mongodb.net
+2025-02-12 18:39:28 [[31MERROR[39M]: Get events failed: getaddrinfo ENOTFOUND cluster0-shard-00-00.337or.mongodb.net
+2025-02-12 18:59:09 [[33MWARN[39M]: Invalid password attempt for user: miteshdixit741@gmail.com
+2025-02-12 18:59:10 [[33MWARN[39M]: Invalid password attempt for user: miteshdixit741@gmail.com
+2025-02-12 18:59:12 [[33MWARN[39M]: Invalid password attempt for user: miteshdixit741@gmail.com
