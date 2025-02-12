@@ -1,0 +1,9 @@
+2025-02-12 02:24:41 [[31MERROR[39M]: Event creation failed: Cannot read properties of undefined (reading 'id')
+2025-02-12 02:44:16 [[31MERROR[39M]: Event creation failed: Event validation failed: description: Description should be at least 50 characters
+2025-02-12 02:45:21 [[31MERROR[39M]: Event creation failed: Event validation failed: description: Description should be at least 50 characters
+2025-02-12 02:45:29 [[31MERROR[39M]: Event creation failed: Cannot read properties of undefined (reading 'emit')
+2025-02-12 12:37:13 [[31MERROR[39M]: Get events failed: getaddrinfo ENOTFOUND cluster0-shard-00-02.337or.mongodb.net
+2025-02-12 12:37:33 [[31MERROR[39M]: Get events failed: getaddrinfo ENOTFOUND cluster0-shard-00-02.337or.mongodb.net
+2025-02-12 15:55:02 [[31MERROR[39M]: Event creation failed: Cannot read properties of undefined (reading 'id')
+2025-02-12 16:14:07 [[31MERROR[39M]: Event creation failed: Event validation failed: date: Event date must be in the future
+2025-02-12 16:14:21 [[31MERROR[39M]: Event creation failed: Event validation failed: date: Event date must be in the future
